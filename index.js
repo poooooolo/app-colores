@@ -10,8 +10,6 @@ servidor.use(cors());
 
 servidor.use(json()); //cualquier cosa que venga en JSON será interceptada
 
-
-
 // servidor.use(("/probamos"), express.static("./pruebas"))
 
 servidor.get("/colores", async (peticion,respuesta) => {
@@ -65,8 +63,6 @@ servidor.delete("/colores/borrar/:id([a-f0-9]{24})", async (peticion,respuesta) 
         respuesta.status(500);
         return respuesta.json(error);
     }
-
-    respuesta.send("delete")
 })
 
 servidor.use((error,peticion,respuesta,siguiente) => {
