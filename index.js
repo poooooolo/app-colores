@@ -8,7 +8,7 @@ const servidor = express();
 
 servidor.use(json()); //cualquier cosa que venga en JSON será interceptada
 
-servidor.use(cors);
+servidor.use(cors());
 
 // servidor.use(("/probamos"), express.static("./pruebas"))
 
