@@ -6,9 +6,11 @@ const {leerColores,crearColor,borrarColor} = require("./db");
 
 const servidor = express();
 
+servidor.use(cors());
+
 servidor.use(json()); //cualquier cosa que venga en JSON será interceptada
 
-servidor.use(cors());
+
 
 // servidor.use(("/probamos"), express.static("./pruebas"))
 
