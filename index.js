@@ -10,7 +10,7 @@ servidor.use(json()); //cualquier cosa que venga en JSON será interceptada
 
 servidor.use(cors);
 
-servidor.use(("/probamos"), express.static("./pruebas"))
+// servidor.use(("/probamos"), express.static("./pruebas"))
 
 servidor.get("/colores", async (peticion,respuesta) => {
     try{
